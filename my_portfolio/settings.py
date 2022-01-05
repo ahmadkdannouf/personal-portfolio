@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-obd2)ni*c00)l!so#u)cu2kthu63-5y!)5-0nb(=sm7sm^9+uo
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['']
+
 
 
 # Application definition
@@ -129,3 +129,8 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
 BASE_DIR / 'static'
+
+try:
+    from .local_settings import *
+except ImportError:
+    print("Looks like no local file. You're on production")
