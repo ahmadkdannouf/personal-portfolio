@@ -25,7 +25,11 @@ SECRET_KEY = 'django-insecure-obd2)ni*c00)l!so#u)cu2kthu63-5y!)5-0nb(=sm7sm^9+uo
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
+<<<<<<< HEAD
 ALLOWED_HOSTS = ['dannoufak.pythonanywhere.com']
+=======
+ALLOWED_HOSTS = ['www.adannouf.com']
+>>>>>>> a412dccca4dee1739d6f60d18f2544af830aab84
 
 
 # Application definition
