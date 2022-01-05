@@ -29,7 +29,6 @@ ALLOWED_HOSTS = ['dannoufak.pythonanywhere.com']
 
 
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -133,3 +132,7 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 BASE_DIR / 'static'
 
+try:
+    from .local_settings import *
+except ImportError:
+    print("you're on production")
